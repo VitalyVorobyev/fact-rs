@@ -2025,6 +2025,7 @@ dependencies = [
  "pad-adapter",
  "paste",
  "pretty_env_logger",
+ "rayon",
  "rerun",
  "serde",
  "serde_json",
