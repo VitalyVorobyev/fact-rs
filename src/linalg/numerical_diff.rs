@@ -55,8 +55,8 @@ macro_rules! numerical_maker {
                 let mut jac: MatrixX = MatrixX::zeros(res.len(), dim);
                 let mut tvs = [$( VectorX::zeros(Variable::dim($name)), )*];
 
+                let mut curr_dim = 0;
                 for i in 0..$num {
-                    let mut curr_dim = 0;
                     for j in 0..tvs[i].len() {
                         tvs[i][j] = eps;
                         // TODO: It'd be more efficient to not have to add tangent vectors to each variable
@@ -127,8 +127,8 @@ macro_rules! numerical_variable_maker {
                 let mut jac: MatrixX = MatrixX::zeros(VOut::DIM, dim);
                 let mut tvs = [$( VectorX::zeros(Variable::dim($name)), )*];
 
+                let mut curr_dim = 0;
                 for i in 0..$num {
-                    let mut curr_dim = 0;
                     for j in 0..tvs[i].len() {
                         tvs[i][j] = eps;
                         // TODO: It'd be more efficient to not have to add tangent vectors to each variable
