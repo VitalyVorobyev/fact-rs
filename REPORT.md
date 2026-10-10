@@ -1,6 +1,6 @@
 # Parallel linearization in factrs: detailed report
 
-This report backs a short upstream proposal for [rpl-cmu/fact-rs](https://github.com/rpl-cmu/fact-rs): ‹issue link›, ‹PR link›.
+This report backs a short upstream proposal for [rpl-cmu/fact-rs](https://github.com/rpl-cmu/fact-rs): issue [#55](https://github.com/rpl-cmu/fact-rs/issues/55), PR [#56](https://github.com/rpl-cmu/fact-rs/pull/56).
 
 - The code is on branch [`feat/parallel-linearize`](https://github.com/VitalyVorobyev/fact-rs/tree/feat/parallel-linearize) of this fork, at `d2d5a53`, on upstream `main` `33b07e4`.
 - This branch, `notes/parallel-linearization`, holds only this file.
